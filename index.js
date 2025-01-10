@@ -25,13 +25,63 @@ const logRequest = (req) => {
 app.all("*", (req, res) => {
   logRequest(req);
   res.status(200).send(`
-        <html>
-            <head><title>Placeholder</title></head>
-            <body>
-                <h1>Placeholder Site</h1>
-                <p>Thank you for visiting this site.</p>
-            </body>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Welcome to enk.us</title>
+            <style>
+                /* Global styles for dark mode */
+                body {
+                    margin: 0;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #121212;
+                    color: #ffffff;
+                    font-family: 'Arial', sans-serif;
+                }
+
+                /* Centered content container */
+                .centered {
+                    text-align: center;
+                }
+
+                /* Styling the main header */
+                h1 {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin: 0;
+                    color: #ffcc00; /* Highlight color */
+                }
+                
+                h2 {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    margin: 0;
+                    color: #ffcc00; /* Highlight color */
+                }
+
+                /* Subtext styling */
+                span {
+                    font-size: 1.2rem;
+                    color: #bbbbbb;
+                    display: block;
+                    margin-top: 0.5rem;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="centered">
+                <h1>enk.us</h1>
+                <h2>welcome</h2>
+                <span>simple. fast. responsive.</span>
+            </div>
+        </body>
         </html>
+
     `);
 });
 
