@@ -1,0 +1,26 @@
+{
+  "name": "serverlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/handler.js",
+  "scripts": {
+    "start": "node api/handler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianuhlemann/serverlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/florianuhlemann/serverlog/issues"
+  },
+  "homepage": "https://github.com/florianuhlemann/serverlog#readme",
+  "dependencies": {
+    "@logtail/node": "^0.5.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
