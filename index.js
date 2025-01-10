@@ -23,7 +23,6 @@ const logRequest = (req) => {
 };
 
 app.all("*", (req, res) => {
-  logRequest(req);
   res.status(200).send(`
         <!DOCTYPE html>
         <html lang="en">
@@ -83,6 +82,7 @@ app.all("*", (req, res) => {
         </html>
 
     `);
+  logRequest(req);
 });
 
 app.listen(PORT, () => {
